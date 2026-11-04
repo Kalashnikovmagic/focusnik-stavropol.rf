@@ -6,7 +6,16 @@
 <meta name="theme-color" content="#050505">
 <title>Фокусник в Ставрополе — иллюзионист Алексей Калашников</title>
 <meta name="description" content="Иллюзионист Алексей Калашников в Ставрополе: современная интерактивная магия с юмором для свадеб, корпоративов, юбилеев и презентаций.">
-<meta property="og:title" content="Фокусник в Ставрополе — Алексей Калашников"><link rel="canonical" href="https://фокусник-ставрополь.рф/"><meta property="og:image" content="img/hero-hall.webp">
+<meta property="og:title" content="Фокусник в Ставрополе — Алексей Калашников"><link rel="canonical" href="https://фокусник-ставрополь.рф/"><meta property="og:image" content="https://xn----8sbgvjbkkhhallheqkp3o.xn--p1ai/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Иллюзионист Алексей Калашников">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:url" content="https://xn----8sbgvjbkkhhallheqkp3o.xn--p1ai/">
+<meta property="og:description" content="Иллюзионист Алексей Калашников в Ставрополе: современная интерактивная магия с юмором для свадеб, корпоративов, юбилеев и презентаций.">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "EntertainmentBusiness", "name": "Иллюзионист Алексей Калашников", "description": "Иллюзионист Алексей Калашников в Ставрополе: современная интерактивная магия с юмором для свадеб, корпоративов, юбилеев и презентаций.", "url": "https://xn----8sbgvjbkkhhallheqkp3o.xn--p1ai/", "image": "https://xn----8sbgvjbkkhhallheqkp3o.xn--p1ai/img/og-image.jpg", "telephone": "+79188867000", "address": {"@type": "PostalAddress", "addressLocality": "Ставрополь", "addressRegion": "Ставропольский край", "addressCountry": "RU"}, "areaServed": {"@type": "City", "name": "Ставрополь"}, "founder": {"@type": "Person", "name": "Алексей Калашников", "jobTitle": "Иллюзионист"}, "sameAs": ["https://t.me/kalashnikov_magic", "https://vk.ru/kalashnikovmagic", "https://www.instagram.com/kalashnikov.magic/"]}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -86,7 +95,10 @@ dialog[open]{animation:pop .45s var(--ease)}@keyframes pop{from{opacity:0;transf
 .contact-copy h2{font-size:clamp(22px,6.3vw,38px)}
 .contact-lead{margin-top:20px;font-size:11px;line-height:1.5}
 .contact-actions{max-width:none;gap:10px}
-.contact-action{grid-template-columns:78px 1fr auto;gap:10px;min-height:76px;padding:15px 14px}
+.contact-action{grid-template-columns:minmax(0,1fr) auto;gap:6px 12px;min-height:76px;padding:15px 14px}
+.contact-action-label{grid-column:1}
+.contact-action strong{grid-column:1;grid-row:2;min-width:0;overflow-wrap:anywhere}
+.contact-action small{grid-column:2;grid-row:1/3}
 .contact-action strong{font-size:13px}
 .contact-action--whatsapp strong,.contact-action--vk strong,.contact-action--telegram strong{font-size:12px}
 .contact-action-label{font-size:8px}
@@ -95,7 +107,8 @@ dialog[open]{animation:pop .45s var(--ease)}@keyframes pop{from{opacity:0;transf
 .book h2{max-width:12ch}.book .sub{max-width:44ch;margin:22px 0 40px;font-size:19px}
 .tel{display:block;font:800 clamp(1.5rem,6.2vw,5.6rem)/1 var(--d);text-decoration:none;margin-bottom:34px;white-space:nowrap}
 .ch{display:flex;flex-wrap:wrap;gap:12px}.ch .btn{background:var(--ink);color:var(--lime)}.ch .btn.ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--ink)}
-#pick{margin:0 0 20px;font-weight:600;min-height:1.5em}
+.vh{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+.book{scroll-margin-top:86px}
 footer{background:var(--ink);padding:48px clamp(18px,4vw,56px);color:var(--mute);font-size:14px}
 footer .wrap{display:grid;gap:12px}footer p{margin:0;max-width:80ch}
 @media(max-width:820px){
@@ -173,20 +186,22 @@ section{padding-left:16px;padding-right:16px}
 <section class="events" id="events"><div class="wrap">
   <h2>Где я могу выступить</h2>
   <p class="sub">Выберите своё мероприятие и посмотрите, как это работает именно на нём.</p>
-  <div class="grid"><button class="ev" data-k="СВАДЬБА"><img src="img/wed.webp" alt="" loading="lazy"><span>Свадьба</span></button><button class="ev" data-k="КОРПОРАТИВ"><img src="img/corp.webp" alt="" loading="lazy"><span>Корпоратив</span></button><button class="ev" data-k="ДЕТСКИЙ ДЕНЬ РОЖДЕНИЯ"><img src="img/kids.webp" alt="" loading="lazy"><span>Детский день рождения</span></button><button class="ev" data-k="ЮБИЛЕЙ"><img src="img/jub.webp" alt="" loading="lazy"><span>Юбилей</span></button><button class="ev" data-k="ЧАСТНОЕ МЕРОПРИЯТИЕ"><img src="img/priv.webp" alt="" loading="lazy"><span>Частное мероприятие</span></button><button class="ev" data-k="ВЫПУСКНОЙ ВЕЧЕР"><img src="img/school.webp" alt="" loading="lazy"><span>Выпускной вечер</span></button><button class="ev" data-k="ПРЕЗЕНТАЦИЯ"><img src="img/pres.webp" alt="" loading="lazy"><span>Презентация</span></button></div>
+  <div class="grid"><button class="ev" data-k="СВАДЬБА"><img src="img/wed.webp" alt="Алексей Калашников показывает фокус невесте на свадьбе" loading="lazy"><span>Свадьба</span></button><button class="ev" data-k="КОРПОРАТИВ"><img src="img/corp.webp" alt="Иллюзионист Алексей Калашников выступает на корпоративе" loading="lazy"><span>Корпоратив</span></button><button class="ev" data-k="ДЕТСКИЙ ДЕНЬ РОЖДЕНИЯ"><img src="img/kids.webp" alt="Фокусник Алексей Калашников с детьми на дне рождения" loading="lazy"><span>Детский день рождения</span></button><button class="ev" data-k="ЮБИЛЕЙ"><img src="img/jub.webp" alt="Алексей Калашников с гостьей на сцене на юбилее" loading="lazy"><span>Юбилей</span></button><button class="ev" data-k="ЧАСТНОЕ МЕРОПРИЯТИЕ"><img src="img/priv.webp" alt="Иллюзионист Алексей Калашников на частном мероприятии" loading="lazy"><span>Частное мероприятие</span></button><button class="ev" data-k="ВЫПУСКНОЙ ВЕЧЕР"><img src="img/school.webp" alt="Алексей Калашников показывает фокус на выпускном вечере" loading="lazy"><span>Выпускной вечер</span></button><button class="ev" data-k="ПРЕЗЕНТАЦИЯ"><img src="img/pres.webp" alt="Алексей Калашников выступает на презентации автомобиля" loading="lazy"><span>Презентация</span></button></div>
 </div></section>
 
+<div class="vh" id="evTexts"><article data-k="СВАДЬБА"><h3>Свадьба</h3><p>Свадьба должна запоминаться не только молодожёнам, но и каждому гостю. Моя задача — создать живые эмоции и объединить людей, которые часто видят друг друга впервые. Современная интерактивная магия помогает быстро познакомить гостей, вовлечь их в происходящее и создать десятки моментов, которые ещё долго будут обсуждать после праздника. Никаких устаревших номеров — только динамичное шоу, юмор и настоящее удивление.</p></article><article data-k="КОРПОРАТИВ"><h3>Корпоратив</h3><p>Корпоратив — это не просто ужин и музыка. Это возможность подарить сотрудникам яркие эмоции и сделать мероприятие действительно особенным. Во время выступления гости становятся участниками невероятных событий, а магия происходит буквально у них в руках. Такой формат одинаково хорошо работает как для небольших компаний, так и для крупных корпоративных праздников.</p></article><article data-k="ДЕТСКИЙ ДЕНЬ РОЖДЕНИЯ"><h3>Детский день рождения</h3><p>Дети искренне верят в чудеса, а значит магия для них работает особенно ярко. В программе много интерактива, юмора и удивительных моментов, где именинник и его друзья становятся главными героями представления. Такой праздник оставляет воспоминания, которые дети ещё долго рассказывают своим друзьям.</p></article><article data-k="ЮБИЛЕЙ"><h3>Юбилей</h3><p>Юбилей — повод собрать самых близких людей и создать атмосферу настоящего праздника. Моя программа помогает удивить гостей любого возраста, добавить в вечер яркие впечатления и сделать событие по-настоящему уникальным. Магия становится частью праздника и органично вписывается в его атмосферу.</p></article><article data-k="ЧАСТНОЕ МЕРОПРИЯТИЕ"><h3>Частное мероприятие</h3><p>Если вы хотите добавить в свой праздник эффект неожиданности и яркие эмоции, современное магическое шоу станет отличным решением. Интерактивный формат позволяет каждому гостю почувствовать себя частью происходящего и получить впечатления, которые невозможно повторить через экран телефона.</p></article><article data-k="ПРЕЗЕНТАЦИЯ"><h3>Презентация</h3><p>Магия отлично привлекает внимание к продукту, услуге или бренду. Я помогаю превратить обычную презентацию в событие, которое запомнится аудитории. Информация подаётся через эмоции и удивление, благодаря чему гости лучше вовлекаются в происходящее и дольше помнят ключевые сообщения компании.</p></article><article data-k="ВЫПУСКНОЙ ВЕЧЕР"><h3>Выпускной вечер</h3><p>Выпускной бывает только один раз в жизни. Моё выступление помогает сделать этот день по-настоящему особенным и наполнить его моментами, которые будут вспоминать спустя годы. Современная магия, юмор и участие самих выпускников создают атмосферу настоящего праздника и яркого финала важного жизненного этапа.</p></article></div>
+
 <dialog id="dlg" aria-labelledby="dt"><button class="x" id="dx" aria-label="Закрыть">×</button>
-  <div class="dl"><img id="di" src="" alt=""><div><h3 id="dt"></h3><p id="dp"></p><a class="btn" id="dc" href="#book">Обсудить выступление</a></div></div>
+  <div class="dl"><img id="di" alt=""><div><h3 id="dt"></h3><p id="dp"></p><a class="btn" id="dc" href="#book">Обсудить выступление</a></div></div>
 </dialog>
 
 <section class="scene4" id="formats" aria-labelledby="formatsTitle">
   <div class="scene4__sticky">
     <h2 class="scene4__title" id="formatsTitle">Форматы выступления</h2>
     <div class="scene4__layers" aria-hidden="true">
-      <img class="scene4__layer scene4__layer--base" src="img/micro-pc.webp" alt="" loading="lazy">
-      <img class="scene4__layer scene4__layer--mid" id="scene4Mid" src="img/stage-hq.webp" alt="" loading="lazy">
-      <img class="scene4__layer scene4__layer--top" id="scene4Top" src="img/all-hq.webp" alt="" loading="lazy">
+      <img class="scene4__layer scene4__layer--base" src="img/micro-pc.webp" alt="Микромагия: Алексей Калашников с игральной картой" loading="lazy">
+      <img class="scene4__layer scene4__layer--mid" id="scene4Mid" src="img/stage-hq.webp" alt="Сценическое шоу: Алексей Калашников с кубиками Рубика" loading="lazy">
+      <img class="scene4__layer scene4__layer--top" id="scene4Top" src="img/all-hq.webp" alt="Карточный фокус крупным планом" loading="lazy">
       <div class="scene4__tint"></div>
       <div class="scene4__vig"></div>
       <div class="scene4__flash" id="scene4Flash"></div>
@@ -214,7 +229,7 @@ section{padding-left:16px;padding-right:16px}
         <article class="scene5__card scene5__card--micro">
           <div class="scene5__header"></div>
           <div class="scene5__video-wrap">
-            <video class="scene5__video" src="assets/video/micro.mp4" poster="img/micro-preview.PNG" controls playsinline preload="metadata"></video>
+            <video class="scene5__video" aria-label="Видео: микромагия Алексея Калашникова" src="assets/video/micro.mp4" poster="img/micro-preview.webp" controls playsinline preload="metadata"></video>
           </div>
           <p class="scene5__description">Магия происходит прямо у вас в руках.</p>
           <a class="scene-booking-cta scene5__booking-cta" href="#book">ОБСУДИТЬ ВЫСТУПЛЕНИЕ</a>
@@ -222,7 +237,7 @@ section{padding-left:16px;padding-right:16px}
         <article class="scene5__card scene5__card--stage">
           <div class="scene5__header"></div>
           <div class="scene5__video-wrap">
-            <video class="scene5__video" src="assets/video/stage.mp4" poster="img/stage-preview.PNG" controls playsinline preload="metadata"></video>
+            <video class="scene5__video" aria-label="Видео: сценическое шоу Алексея Калашникова" src="assets/video/stage.mp4" poster="img/stage-preview.webp" controls playsinline preload="metadata"></video>
           </div>
           <p class="scene5__description">Большая история, в которой зрители становятся участниками.</p>
           <a class="scene-booking-cta scene5__booking-cta" href="#book">ОБСУДИТЬ ВЫСТУПЛЕНИЕ</a>
@@ -234,7 +249,7 @@ section{padding-left:16px;padding-right:16px}
   <div class="contact-wrap">
     <div class="contact-copy">
       <p class="contact-eyebrow">ГОТОВЫ К ВСТРЕЧЕ?</p>
-      <h2>УЗНАЙ ЗАНЯТОСТЬ<br><span>И ЗАБРОНИРУЙ</span><br>СВОЮ ДАТУ</h2>
+      <h2>УЗНАЙТЕ,<br><span>СВОБОДНА ЛИ</span><br>ВАША ДАТА</h2>
       <p class="contact-lead">Свяжитесь со мной удобным способом — обсудим формат выступления, дату и детали мероприятия.</p>
     </div>
     <div class="contact-actions">
@@ -273,9 +288,10 @@ section{padding-left:16px;padding-right:16px}
   <p>© 2026 Алексей Калашников. Все права защищены. <a href="privacy.html">Политика обработки персональных данных</a></p>
 </div></footer>
 <script>
-const EV={"СВАДЬБА": {"t": "Свадьба", "x": "Свадьба должна запоминаться не только молодожёнам, но и каждому гостю. Моя задача - создать живые эмоции и объединить людей, которые часто видят друг друга впервые. Современная интерактивная магия помогает быстро познакомить гостей, вовлечь их в происходящее и создать десятки моментов, которые ещё долго будут обсуждать после праздника. Никаких устаревших номеров - только динамичное шоу, юмор и настоящее удивление.", "i": "img/wed.webp"}, "КОРПОРАТИВ": {"t": "Корпоратив", "x": "Корпоратив - это не просто ужин и музыка. Это возможность подарить сотрудникам яркие эмоции и сделать мероприятие действительно особенным. Во время выступления гости становятся участниками невероятных событий, а магия происходит буквально у них в руках. Такой формат одинаково хорошо работает как для небольших компаний, так и для крупных корпоративных праздников.", "i": "img/corp.webp"}, "ДЕТСКИЙ ДЕНЬ РОЖДЕНИЯ": {"t": "Детский день рождения", "x": "Дети искренне верят в чудеса, а значит магия для них работает особенно ярко. В программе много интерактива, юмора и удивительных моментов, где именинник и его друзья становятся главными героями представления. Такой праздник оставляет воспоминания, которые дети ещё долго рассказывают своим друзьям.", "i": "img/kids.webp"}, "ЮБИЛЕЙ": {"t": "Юбилей", "x": "Юбилей - повод собрать самых близких людей и создать атмосферу настоящего праздника. Моя программа помогает удивить гостей любого возраста, добавить в вечер яркие впечатления и сделать событие по-настоящему уникальным. Магия становится частью праздника и органично вписывается в его атмосферу.", "i": "img/jub.webp"}, "ЧАСТНОЕ МЕРОПРИЯТИЕ": {"t": "Частное мероприятие", "x": "Если вы хотите добавить в свой праздник эффект неожиданности и яркие эмоции, современное магическое шоу станет отличным решением. Интерактивный формат позволяет каждому гостю почувствовать себя частью происходящего и получить впечатления, которые невозможно повторить через экран телефона.", "i": "img/priv.webp"}, "ПРЕЗЕНТАЦИЯ": {"t": "Презентация", "x": "Магия отлично привлекает внимание к продукту, услуге или бренду. Я помогаю превратить обычную презентацию в событие, которое запомнится аудитории. Информация подаётся через эмоции и удивление, благодаря чему гости лучше вовлекаются в происходящее и дольше помнят ключевые сообщения компании.", "i": "img/pres.webp"}, "ВЫПУСКНОЙ ВЕЧЕР": {"t": "Выпускной вечер", "x": "Выпускной бывает только один раз в жизни. Моё выступление помогает сделать этот день по-настоящему особенным и наполнить его моментами, которые будут вспоминать спустя годы. Современная магия, юмор и участие самих выпускников создают атмосферу настоящего праздника и яркого финала важного жизненного этапа.", "i": "img/school.webp"}},$=s=>document.querySelector(s),dlg=$('#dlg'),wa=$('#wa'),pick=$('#pick');
-function choose(t){pick.textContent='Вы выбрали: '+t;wa.href='https://wa.me/79188867000?text='+encodeURIComponent('Здравствуйте! Интересует выступление: '+t+'. Подскажите, свободна ли дата?')}
-document.querySelectorAll('.ev').forEach(b=>b.onclick=()=>{const e=EV[b.dataset.k];$('#dt').textContent=e.t;$('#dp').textContent=e.x;$('#di').src=e.i;dlg.dataset.t=e.t.toLowerCase();dlg.showModal()});
+const $=s=>document.querySelector(s),dlg=$('#dlg'),wa=$('#wa');
+const EV={};document.querySelectorAll('#evTexts article').forEach(a=>{EV[a.dataset.k]={t:a.querySelector('h3').textContent,x:a.querySelector('p').textContent}});
+function choose(t){wa.href='https://wa.me/79188867000?text='+encodeURIComponent('Здравствуйте! Интересует выступление: '+t+'. Подскажите, свободна ли дата?')}
+document.querySelectorAll('.ev').forEach(b=>b.onclick=()=>{const e=EV[b.dataset.k];$('#dt').textContent=e.t;$('#dp').textContent=e.x;const im=b.querySelector('img');$('#di').src=im.getAttribute('src');$('#di').alt=im.alt;dlg.dataset.t=e.t.toLowerCase();dlg.showModal()});
 $('#dx').onclick=()=>dlg.close();dlg.onclick=e=>{if(e.target===dlg)dlg.close()};
 $('#dc').onclick=()=>{choose(dlg.dataset.t);dlg.close()};
 document.querySelectorAll('[data-ev]').forEach(a=>a.onclick=()=>choose(a.dataset.ev));
